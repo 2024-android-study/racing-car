@@ -3,10 +3,11 @@ package racingcar.validation
 import racingcar.extension.isNotOutOfRange
 
 object InputValidator {
+
     fun checkName(input: String) {
         require(input.isNotEmpty()) { NameError.EMPTY.message }
         require(input.contains(" ").not()) { NameError.CONTAIN_GAP.message }
-        require(input.isNotOutOfRange()){  }
+        require(input.isNotOutOfRange()){ NameError.OUT_OF_RANGE.message }
     }
 
     fun checkTryCycle(input: String) {
