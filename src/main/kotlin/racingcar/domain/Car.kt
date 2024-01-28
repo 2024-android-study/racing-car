@@ -14,5 +14,8 @@ class Car(val name: String) {
         }
     }
 
-    
+    // 위치가 같은지 비교
+    fun isSamePosition(position: Int): Boolean {
+        return this.position == position
+    }
 }
