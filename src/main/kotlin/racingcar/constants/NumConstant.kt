@@ -1,4 +1,4 @@
-package racingcar.Constants
+package racingcar.constants
 
 object NumConstant {
     const val MIN_NAME_LENGTH = 1

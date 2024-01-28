@@ -1,6 +1,6 @@
 package racingcar
 
-import racingcar.View.RacingGame
+import racingcar.view.RacingGame
 
 fun main() {
     RacingGame().play()

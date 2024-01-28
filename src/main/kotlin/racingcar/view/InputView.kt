@@ -1,6 +1,6 @@
-package racingcar.View
+package racingcar.view
 
-import racingcar.Constants.ViewConstant
+import racingcar.constants.ViewConstant
 import camp.nextstep.edu.missionutils.Console
 import racingcar.service.Validator
 

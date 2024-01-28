@@ -1,4 +1,4 @@
-package racingcar.Constants
+package racingcar.constants
 
 object ErrorConstant {
     const val ERROR_INPUT_NUM = "숫자가 아닙니다."

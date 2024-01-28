@@ -1,6 +1,6 @@
 package racingcar.domain
 
-import racingcar.Constants.NumConstant
+import racingcar.constants.NumConstant
 
 class Car(val name: String) {
 

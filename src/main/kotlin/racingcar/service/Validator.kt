@@ -1,7 +1,7 @@
 package racingcar.service
 
-import racingcar.Constants.ErrorConstant
-import racingcar.Constants.NumConstant
+import racingcar.constants.ErrorConstant
+import racingcar.constants.NumConstant
 
 class Validator {
     // 자동차 이름 길이 확인

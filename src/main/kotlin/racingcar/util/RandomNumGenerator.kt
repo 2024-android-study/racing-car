@@ -1,7 +1,7 @@
 package racingcar.util
 
 import camp.nextstep.edu.missionutils.Randoms
-import racingcar.Constants.NumConstant
+import racingcar.constants.NumConstant
 
 class RandomNumGenerator {
     // 랜덤값 생성
