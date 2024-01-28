@@ -2,12 +2,13 @@ package racingcar.View
 
 import racingcar.Constants.ErrorConstant
 import racingcar.Constants.ViewConstant
+import camp.nextstep.edu.missionutils.Console
 
 class InputView {
     // 자동차 이름 입력 받음
     fun inputCarName(): List<String> {
         println(ViewConstant.INPUT_CAR)
-        val input = readlnOrNull()?.split(',')?.map { checkCarNameLength(it) }
+        val input = Console.readLine()?.split(',')?.map { checkCarNameLength(it) }
 
         return input ?: listOf("")
     }
@@ -21,9 +22,9 @@ class InputView {
     // 시도 횟수 입력 받음
     fun inputTrialNum(): Int {
         println(ViewConstant.INPUT_MOVE_CNT)
-        val input = readlnOrNull()
+        val input = Console.readLine()
 
-        checkTrialNum(input!!)
+        checkTrialNum(input)
 
         return input.toInt()
     }
