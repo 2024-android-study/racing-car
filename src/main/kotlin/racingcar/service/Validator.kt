@@ -12,7 +12,8 @@ class Validator {
 
     // 시도 횟수 입력값 검증
     fun checkTrialNum(input: String) {
-        require((isNumber(input))) { ErrorConstant.ERROR_INPUT_NUM}
+        require((isNumber(input))) { ErrorConstant.ERROR_INPUT_NUM }
+        require(input.toInt() == NumConstant.ZERO) { ErrorConstant.ERROR_INPUT_TRIAL_NUM_ZERO }
     }
 
     private fun isNumber(input: String): Boolean {

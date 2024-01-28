@@ -8,4 +8,5 @@ object NumConstant {
     const val MAX_RANDOM_NUM = 9
 
     const val CAN_MOVE_NUM = 4
+    const val ZERO = 0
 }

@@ -10,7 +10,7 @@ class InputView {
     // 자동차 이름 입력 받음
     fun inputCarName(): List<String> {
         println(ViewConstant.INPUT_CAR)
-        val input = Console.readLine()?.split(',')?.map { validator.checkCarNameLength(it) }
+        val input = Console.readLine()?.replace(" ", "")?.split(',')?.map { validator.checkCarNameLength(it) }
 
         return input ?: listOf("")
     }
