@@ -1,6 +1,9 @@
 package racingcar
 
-class Car(name: String) {
-    val name = name
-    val distance = ""
+class Car(val name: String, var distance: String = "") {
+    fun goForwardOrStop(num: Int) {
+        if(num >= 4) {
+            distance += "-"
+        }
+    }
 }
