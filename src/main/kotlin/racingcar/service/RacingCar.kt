@@ -29,10 +29,12 @@ class RacingCar {
     private fun tryGame(tryNum: Int) {
         // 출력
         outputView.showGameTryMessage()
-
+        // 시도 횟수만큼 출력 반복
         for (i: Int in 0 until tryNum) {
             repeatOneTry()
         }
+        // 마지막 결과 출력
+        outputView.printGameResult(movementInfo)
     }
 
     private fun repeatOneTry() {

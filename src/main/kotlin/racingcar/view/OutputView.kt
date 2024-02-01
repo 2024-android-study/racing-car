@@ -17,7 +17,13 @@ class OutputView {
         }
     }
 
-    fun printGameResult() {
+    fun printGameResult(info: Map<String, Int>) {
+        val winnerList = converter.mapToWinnerList(info)
 
+        var winnerStr = winnerList[0]
+        for (i: Int in 1 until winnerList.size) {
+            winnerStr += ", " + winnerList[i]
+        }
+        println(GameMessageConstant.OUTPUT_RESULT.format(winnerStr))
     }
 }
