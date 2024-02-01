@@ -7,6 +7,7 @@ class RacingCar {
 
     val inputView = InputView()
     val validator = InputValidator()
+    val converter = Converter()
 
     private lateinit var cars: List<String>
     private var tryNum = 0
@@ -16,6 +17,9 @@ class RacingCar {
         isValidCarLength()
 
         tryNum = inputView.readRaceTryNum()
+
+        val map = converter.mapCarNameToMoveNum(cars)
+        println(map)
     }
 
     private fun isValidCarLength() {
