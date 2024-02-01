@@ -9,20 +9,18 @@ class RacingCar {
     val validator = InputValidator()
     val converter = Converter()
 
-    private lateinit var cars: List<String>
-    private var tryNum = 0
+    private lateinit var movementInfo: Map<String, Int>
 
     fun run() {
-        cars = inputView.readRaceCars()
-        isValidCarLength()
+        val cars = inputView.readRaceCars()
+        isValidCarLength(cars)
 
-        tryNum = inputView.readRaceTryNum()
+        val tryNum = inputView.readRaceTryNum()
 
-        val map = converter.mapCarNameToMoveNum(cars)
-        println(map)
+        movementInfo = converter.mapCarNameToMoveNum(cars)
     }
 
-    private fun isValidCarLength() {
+    private fun isValidCarLength(cars: List<String>) {
         for (car in cars) {
             validator.checkCarNameLength(car)
         }
