@@ -9,11 +9,13 @@ class RacingCar {
     val validator = InputValidator()
 
     private lateinit var cars: List<String>
+    private var tryNum = 0
 
     fun run() {
         cars = inputView.readRaceCars()
         isValidCarLength()
 
+        tryNum = inputView.readRaceTryNum()
     }
 
     private fun isValidCarLength() {
