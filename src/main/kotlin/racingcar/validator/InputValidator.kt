@@ -8,4 +8,10 @@ class InputValidator {
             ErrorMessageConstant.ERROR_INVALID_CAR_NAME_LENGTH
         }
     }
+
+    fun checkIsValidNumber(input: String) {
+        require(input.all { it.isDigit() } && input.toInt() >= 0) {
+            ErrorMessageConstant.ERROR_INVALID_NUMBER
+        }
+    }
 }
